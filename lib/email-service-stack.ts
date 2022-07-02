@@ -57,7 +57,7 @@ export class EmailServiceStack extends Stack {
       environment: {
         ORDER_TABLE_NAME: orderTable.tableName,
         ORDER_PROCESSING_QUEUE_URL: orderQueue.queueUrl,
-        ADMIN_EMAIL: 'lakindu2002@live.com'
+        ADMIN_EMAIL: '<<YOUR_ADMIN_EMAIL>>',
       }
     });
     orderTable.grantWriteData(createOrderFunction); // allow the createOrder lambda function to write to the order table

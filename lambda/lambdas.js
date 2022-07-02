@@ -49,7 +49,7 @@ exports.createOrder = async (event) => {
 };
 
 exports.processOrder = async (event) => {
-    const SOURCE_EMAIL = 'lakinduhewa@gmail.com';
+    const SOURCE_EMAIL = '<<YOUR-SOURCE-EMAIL>>';
     const recordPromises = event.Records.map(async (record) => {
         const { body } = record;
         const { order, admin } = JSON.parse(body);
